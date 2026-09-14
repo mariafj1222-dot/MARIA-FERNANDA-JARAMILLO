@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff5f8;
+    text-align: center;
+}
+
+#logo {
+    color: lightpink;
+    font-size: 35px;
+}
+
+.titulo {
+    color: lightpink;
+    margin: 20px;
+}
+
+p {
+    margin: 15px;
+}
+
+table {
+    margin: auto;
+    border: 2px solid lightpink;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid lightpink;
+    padding: 12px;
+}
+
+th {
+    background-color: #f8d5df;
+    color: #9e3f61;
+}
+
+form {
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+button {
+    background-color: lightpink;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightpink;
+    margin: 20px 0;
+}
+
+.aviso {
+    color: red;
+}
+
+#mensaje-especial {
+    color: green;
+}

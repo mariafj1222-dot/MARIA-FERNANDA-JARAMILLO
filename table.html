@@ -1,274 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Glow - Studio</title>
-</head>
-<body>
-   <!DOCTYPE html>
+    <title>Glow Studio - Wireframing</title>
 
+    <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Glow Studio - Dashboard</title>
+    <title>Glow Studio</title>
 
-```
-<style>
-    body {
-        background-color: #fff5fa;
-        font-family: Arial, sans-serif;
-    }
+    <style>
 
-    header {
-        background-color: #f8c8dc;
-        text-align: center;
-        padding: 20px;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8fb;
+        }
 
-    h1 {
-        color: #c2185b;
-    }
+        header {
+            background-color: #f8c9dc;
+            padding: 15px;
+            border-bottom: 2px solid #e8a0bd;
+        }
 
-    h2 {
-        color: #d81b60;
-    }
+        h1 {
+            color: #d96b9b;
+            margin: 0;
+        }
 
-    h3 {
-        color: #ad1457;
-    }
+        header p {
+            color: #8f4667;
+        }
 
-    section {
-        background-color: #ffffff;
-        margin: 20px;
-        padding: 20px;
-        border: 2px solid #f3b6cf;
-    }
+        .contenedor {
+            display: flex;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: center;
-    }
+        aside {
+            width: 200px;
+            min-height: 700px;
+            background-color: #fde4ee;
+            padding: 20px;
+        }
 
-    th {
-        background-color: #f8c8dc;
-        color: #880e4f;
-        padding: 12px;
-    }
+        aside h2 {
+            color: #d96b9b;
+        }
 
-    td {
-        padding: 10px;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    aside {
-        background-color: #fce4ec;
-        margin: 20px;
-        padding: 20px;
-        border: 2px solid #f3b6cf;
-    }
+        nav li {
+            margin: 20px 0;
+        }
 
-    input {
-        margin: 5px;
-        padding: 5px;
-    }
+        nav a {
+            text-decoration: none;
+            color: #9b4d70;
+            font-weight: bold;
+        }
 
-    footer {
-        background-color: #f8c8dc;
-        text-align: center;
-        padding: 15px;
-        color: #880e4f;
-    }
-</style>
-```
+        nav a:hover {
+            color: #d96b9b;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #d96b9b;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            width: 220px;
+            background-color: white;
+            border: 2px solid #f0b3ca;
+            border-radius: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .producto img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .producto h3 {
+            color: #d96b9b;
+        }
+
+        .producto p {
+            color: #555;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #d96b9b;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            border: 1px solid #d96b9b;
+            padding: 10px;
+        }
+
+        form {
+            background-color: #fde4ee;
+            width: 500px;
+            max-width: 90%;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        label {
+            color: #9b4d70;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #e8a0bd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #d96b9b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f8c9dc;
+            color: #8f4667;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-```
-<header>
-    <h1>✨ Glow Studio ✨</h1>
-    <p>Dashboard Relacional de Maquillaje</p>
-</header>
+    <header>
+
+        <h1>Glow Studio</h1>
+
+        <p>Maquillaje, belleza y cuidado de la piel</p>
+
+    </header>
 
 
-<main>
+    <div class="contenedor">
 
-    <!-- SECCIÓN 1 -->
-    <section id="catalogo">
+        <aside>
 
-        <h2>💄 Catálogo de Productos</h2>
+            <h2>Menú</h2>
 
-        <table border="1">
+            <nav>
 
-            <colgroup>
-                <col style="background-color: #fde7f0;">
-                <col>
-            </colgroup>
+                <ul>
 
-            <thead>
-                <tr>
-                    <th colspan="2">Catálogo General Glow Studio</th>
-                </tr>
-            </thead>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
 
-            <tbody>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
 
-                <tr id="item-001">
-                    <td rowspan="2">Rostro</td>
-                    <td>Base Líquida</td>
-                </tr>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
 
-                <tr id="item-002">
-                    <td>Corrector</td>
-                </tr>
+                    <li>
+                        <a href="#solicitud">Solicitar producto</a>
+                    </li>
 
-                <tr id="item-003">
-                    <td rowspan="2">Labios</td>
-                    <td>Labial Rosa</td>
-                </tr>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
 
-                <tr id="item-004">
-                    <td>Gloss Brillante</td>
-                </tr>
+                </ul>
 
-            </tbody>
+            </nav>
 
-            <tfoot>
-                <tr>
-                    <td colspan="2">
-                        ✨ Productos disponibles en Glow Studio ✨
-                    </td>
-                </tr>
-            </tfoot>
-
-        </table>
-
-    </section>
+        </aside>
 
 
-    <!-- SECCIÓN 2 -->
-    <section id="servicios">
+        <main>
 
-        <h2>🌸 Servicios de Glow Studio</h2>
+            <section id="inicio">
+
+                <h2>Bienvenida a Glow Studio</h2>
+
+                <p>
+                    Bienvenida a Glow Studio, un espacio dedicado al maquillaje,
+                    la belleza y el cuidado de la piel.
+                </p>
+
+                <p>
+                    Encuentra productos y servicios para crear tu propio estilo.
+                    <span style="color: #d96b9b;">♥</span>
+                </p>
+
+            </section>
+
+
+            <section id="productos">
+
+                <h2>Productos de Glow Studio</h2>
+
+                <div class="productos">
+
+
+                    <!-- BASE -->
+
+                    <article class="producto">
+
+                        <img src="maquillaje_files/base.png" alt="Base líquida">
+
+                        <h3>Base líquida</h3>
+
+                        <p>
+                            Producto para el rostro.
+                        </p>
+
+                        <p>
+                            <strong>Disponible</strong>
+                        </p>
+
+                    </article>
+
+
+                    <!-- CORRECTOR -->
+
+                    <article class="producto">
+
+                        <img src="maquillaje_files/corrector.png" alt="Corrector">
+
+                        <h3>Corrector</h3>
+
+                        <p>
+                            Producto para el rostro.
+                        </p>
+
+                        <p>
+                            <strong>Disponible</strong>
+                        </p>
+
+                    </article>
+
+
+                    <!-- LABIAL -->
+
+                    <article class="producto">
+
+                        <img src="maquillaje_files/labial.png" alt="Labial rosa">
+
+                        <h3>Labial rosa</h3>
+
+                        <p>
+                            Producto para labios.
+                        </p>
+
+                        <p>
+                            <strong>Disponible</strong>
+                        </p>
+
+                    </article>
+
+
+                    <!-- GLOSS -->
+
+                    <article class="producto">
+
+                        <img src="maquillaje_files/gloss.png" alt="Gloss">
+
+                        <h3>Gloss</h3>
+
+                        <p>
+                            Producto para labios.
+                        </p>
+
+                        <p>
+                            <strong>Agotado</strong>
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Catálogo de Productos</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th colspan="3">
+                                Productos de Glow Studio
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Producto</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td rowspan="2">Rostro</td>
+                            <td>Base líquida</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>Corrector</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Labios</td>
+                            <td>Labial rosa</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gloss</td>
+                            <td>Agotado</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+            <section id="servicios">
+
+                <h2>Servicios de Glow Studio</h2>
+
+                <ul>
+
+                    <li>Maquillaje profesional</li>
+
+                    <li>Asesoría personalizada</li>
+
+                    <li>Clases de automaquillaje</li>
+
+                    <li>
+                        Recomendación de productos según el tipo de piel
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section id="solicitud">
+
+                <h2>Solicitar un Producto</h2>
+
+                <form action="/pedido" method="post">
+
+                    <label for="nombre">
+                        Nombre completo:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                    >
+
+                    <br><br>
+
+
+                    <label for="correo">
+                        Correo electrónico:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="Escribe tu correo"
+                    >
+
+                    <br><br>
+
+
+                    <label for="producto">
+                        Selecciona el producto:
+                    </label>
+
+                    <br>
+
+                    <select id="producto" name="producto">
+
+                        <option value="base">
+                            Base líquida
+                        </option>
+
+                        <option value="corrector">
+                            Corrector
+                        </option>
+
+                        <option value="labial">
+                            Labial rosa
+                        </option>
+
+                        <option value="gloss">
+                            Gloss
+                        </option>
+
+                    </select>
+
+                    <br><br>
+
+
+                    <label for="cantidad">
+                        Cantidad:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        placeholder="Cantidad"
+                    >
+
+                    <br><br>
+
+
+                    <label for="comentario">
+                        Comentario:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="comentario"
+                        name="comentario"
+                        placeholder="Escribe una observación"
+                    >
+
+                    <br><br>
+
+
+                    <button type="submit">
+                        Enviar solicitud
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <section>
+
+                <h2>Información adicional</h2>
+
+                <p>
+                    En Glow Studio puedes encontrar productos de maquillaje
+                    y recibir recomendaciones para elegirlos.
+                </p>
+
+                <p>
+                    Recuerda revisar la disponibilidad antes de realizar
+                    tu solicitud.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer id="contacto">
 
         <p>
-            En Glow Studio puedes encontrar diferentes servicios
-            relacionados con el mundo del maquillaje y la belleza.
-        </p>
-
-        <ul>
-            <li>💄 Maquillaje profesional</li>
-            <li>🎀 Asesoría personalizada</li>
-            <li>✨ Clases de automaquillaje</li>
-            <li>🌷 Recomendación de productos</li>
-        </ul>
-
-    </section>
-
-
-    <!-- SECCIÓN 3 -->
-    <section id="informacion">
-
-        <h2>💗 Información del Dashboard</h2>
-
-        <p>
-            Este dashboard permite organizar productos de maquillaje
-            y realizar solicitudes de acuerdo con el catálogo
-            disponible en Glow Studio.
+            &copy; 2026 Glow Studio
         </p>
 
         <p>
-            Los productos están organizados por categorías para
-            facilitar su consulta y solicitud.
+            Proyecto de Desarrollo Web &lt;HTML5&gt;
         </p>
 
-    </section>
+        <p>
+            Autora: María Fernanda
+        </p>
 
-</main>
+    </footer>
 
-
-<!-- PANEL LATERAL -->
-<aside>
-
-    <h3>🛍️ Solicitar Productos</h3>
-
-    <p>
-        Selecciona la cantidad de productos que deseas solicitar:
-    </p>
-
-    <form action="/pedido">
-
-        <label for="req-001">
-            Cantidad de Base Líquida:
-        </label>
-
-        <input
-            type="number"
-            id="req-001"
-            name="cantidad_base"
-            tabindex="4">
-
-        <br>
-
-        <label for="req-002">
-            Cantidad de Corrector:
-        </label>
-
-        <input
-            type="number"
-            id="req-002"
-            name="cantidad_corrector"
-            tabindex="1">
-
-        <br>
-
-        <label for="req-003">
-            Cantidad de Labial Rosa:
-        </label>
-
-        <input
-            type="number"
-            id="req-003"
-            name="cantidad_labial"
-            tabindex="3">
-
-        <br>
-
-        <label for="req-004">
-            Cantidad de Gloss:
-        </label>
-
-        <input
-            type="number"
-            id="req-004"
-            name="cantidad_gloss"
-            tabindex="2">
-
-        <br><br>
-
-        <input
-            type="submit"
-            value="Enviar Solicitud">
-
-    </form>
-
-</aside>
-
-
-<footer>
-
-    <p>
-        💕 Glow Studio | Dashboard Relacional HTML5 | 2026
-    </p>
-
-</footer>
-```
-
-</body>
-</html>
- 
 </body>
 </html>
