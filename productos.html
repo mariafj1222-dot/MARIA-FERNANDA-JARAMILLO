@@ -1,73 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Glow Studio - Maquillaje</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Studio - Maquillaje</title>
+
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
-<body> 
+<body>
 
-    <h1 style="color: lightpink; text-align: center;">
-        💄 Glow Beauty 💗
-    </h1>
+    <header class="encabezado">
 
-    <p style="text-align: center;">
-        Maquillaje para resaltar tu belleza y tu estilo ✨
-    </p>
+        <h1>💄 Glow Studio 💗</h1>
+        
+        <nav>
 
-    <hr>
+            <ul> 
+            
+            <li> <a href="productos.html"> Inicio </a> </li>
+            <li> <a href="productos.html"> productos </a> </li>
+            <li> <a href="productos.html"> servicios </a> </li>
+            <li> <a href="productos.html"> contactos </a> </li>
 
-  <h1 style="color: lightpink; text-align: center;">
-        🌸 Nuestros productos
-    </h1>
+            </ul>
 
-    <table border="2" bordercolor="lightpink" style="margin: auto;">
+        </nav>
 
-        <tr>
-            <th>Producto</th>
-            <th>Tipo</th>
-            <th>Precio</th>
-        </tr>
+    </header>
 
-        <tr>
-            <td>Base Glow</td>
-            <td>Base</td>
-            <td>$65.000</td>
-        </tr>
+        <p>
+            Maquillaje para resaltar tu belleza y tu estilo ✨
+        </p>
 
-        <tr>
-            <td>Pink Blush</td>
-            <td>Rubor</td>
-            <td>$35.000</td>
-        </tr>
+    </header>
 
-        <tr>
-            <td>Magic Eyes</td>
-            <td>Sombras</td>
-            <td>$80.000</td>
-        </tr>
 
-        <tr>
-            <td>Shine Gloss</td>
-            <td>Brillo labial</td>
-            <td>$28.000</td>
-        </tr>
+    <main>
 
-    </table>
+        <!-- PRODUCTOS -->
 
-    <hr>
- 
-    <h1 style="color: lightpink; text-align: center;">
-        ✨ Sobre Glow Beauty
-    </h1>
+        <h2 class="titulo">
+            🌸 Nuestros productos 🌸
+        </h2>
 
-    <p style="text-align: center;">
-        Glow Beauty es una página dedicada al maquillaje,
-        donde puedes conocer diferentes productos y encontrar
-        opciones para crear tus looks favoritos. 💕
-    </p>
 
-    <p style="text-align: center;">
-        💗 Gracias por visitar Glow Beauty ✨
-    </p>
+        <section class="productos">
+
+
+            <!-- TARJETA 1 -->
+
+            <div class="tarjeta">
+
+                <h3>Base Glow 💄</h3>
+
+                <img src="base.png" alt="Base de maquillaje">
+
+                <p>
+                    Base de maquillaje de acabado luminoso
+                    que ayuda a unificar el tono de la piel.
+                </p>
+
+                <span class="precio">
+                    $65.000
+                </span>
+
+            </div>
+
+
+            <!-- TARJETA 2 -->
+
+            <div class="tarjeta">
+
+                <h3>Pink Blush 🌸</h3>
+
+                <img src="rubor.png" alt="Rubor">
+
+                <p>
+                    Rubor en tono rosado que aporta
+                    un toque de color y frescura al rostro.
+                </p>
+
+                <span class="precio">
+                    $35.000
+                </span>
+
+            </div>
+
+
+            <!-- TARJETA 3 -->
+
+            <div class="tarjeta">
+
+                <h3>Magic Eyes 👁️</h3>
+
+                <img src="sombras.png" alt="Paleta de sombras">
+
+                <p>
+                    Paleta de sombras con diferentes tonos
+                    para crear looks suaves y creativos.
+                </p>
+
+                <span class="precio">
+                    $80.000
+                </span>
+
+            </div>
+
+
+            <!-- TARJETA 4 -->
+
+            <div class="tarjeta">
+
+                <h3>Shine Gloss 💋</h3>
+
+                <img src="gloss.png" alt="Brillo labial">
+
+                <p>
+                    Brillo labial que aporta luminosidad
+                    y un acabado bonito a los labios.
+                </p>
+
+                <span class="precio">
+                    $28.000
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESCRIPCIÓN DE GLOW STUDIO -->
+
+        <section class="descripcion">
+
+            <h2>
+                ✨ Sobre Glow Studio ✨
+            </h2>
+
+            <p>
+                Glow Studio es un espacio dedicado al maquillaje
+                y la belleza, donde puedes conocer diferentes
+                productos y aprender a crear looks de acuerdo
+                con tu estilo. 💄💗
+            </p>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="registro">
+
+            <h2 class="titulo">
+                💗 Regístrate en Glow Studio
+            </h2>
+
+            <p>
+                Completa el formulario para conocer más
+                sobre nuestros productos.
+            </p>
+
+
+            <form>
+
+                <label>
+                    Nombre:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    placeholder="Escribe tu nombre"
+                >
+
+                <br><br>
+
+
+                <label>
+                    Correo:
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    placeholder="Escribe tu correo"
+                >
+
+                <br><br>
+
+
+                <label>
+                    Contraseña:
+                </label>
+
+                <br>
+
+                <input
+                    type="password"
+                    placeholder="Escribe tu contraseña"
+                >
+
+                <br><br>
+
+
+                <label>
+                    ¿Qué producto te gusta más?
+                </label>
+
+                <br><br>
+
+
+                <input
+                    type="radio"
+                    name="producto"
+                >
+                Base 💄
+
+
+                <input
+                    type="radio"
+                    name="producto"
+                >
+                Labial 💋
+
+
+                <input
+                    type="radio"
+                    name="producto"
+                >
+                Sombras 👁️
+
+                <br><br>
+
+
+                <label>
+                    ¿Qué productos quieres conocer?
+                </label>
+
+                <br><br>
+
+
+                <input type="checkbox">
+                Maquillaje 💄
+
+
+                <input type="checkbox">
+                Rubores 🌸
+
+
+                <input type="checkbox">
+                Labiales 💋
+
+                <br><br>
+
+
+                <a href="https://github.com/mariafj1222-dot/MARIA-FERNANDA-JARAMILLO.git">
+
+                    <button type="button">
+                        ✨ Iniciar sesión ✨
+                    </button>
+
+                </a>
+
+            </form>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+
+        <section class="informacion">
+
+            <h2 class="titulo">
+                💕 Nuestra propuesta 💕
+            </h2>
+
+            <p>
+                En Glow Studio buscamos ofrecer productos de
+                maquillaje bonitos y de calidad, brindando
+                opciones para diferentes estilos y gustos.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            💗 Gracias por visitar Glow Studio ✨
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,75 +1,327 @@
+/* MODELO DE CAJA */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+
+/* CUERPO DE LA PÁGINA */
+
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #fff5f8;
+    background-color: #fff5fa;
+    color: #6b4052;
     text-align: center;
 }
 
-#logo {
-    color: lightpink;
-    font-size: 35px;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #6b4052;
 }
+
+li {
+    display: inline;
+    color: #6b4052;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: #f8c8dc;
+
+    padding: 30px;
+
+    border: 3px solid #d4af37;
+
+    margin: 20px;
+
+    border-radius: 18px;
+}
+
+.encabezado h1 {
+    color: #c94f83;
+    font-size: 36px;
+
+    margin: 0 0 10px 0;
+}
+
+.encabezado p {
+    color: #6b4052;
+
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+/* TITULOS */
 
 .titulo {
-    color: lightpink;
-    margin: 20px;
+    color: #c94f83;
+
+    background-color: #ffe1ed;
+
+    padding: 15px 25px;
+
+    border: 2px solid #d4af37;
+
+    margin: 30px auto;
+
+    width: 80%;
+
+    border-radius: 12px;
 }
 
-p {
-    margin: 15px;
+
+/* CONTENEDOR DE LAS TARJETAS */
+
+.productos {
+    width: 90%;
+
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border: 3px solid #c0c0c0;
+
+    margin: 0 auto 35px auto;
+
+    border-radius: 20px;
 }
 
-table {
-    margin: auto;
-    border: 2px solid lightpink;
-    border-collapse: collapse;
-    background-color: white;
+
+/* TARJETAS DE PRODUCTOS */
+
+.tarjeta {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 220px;
+
+    min-height: 390px;
+
+    background-color: #ffdce9;
+
+    padding: 20px;
+
+    border: 3px solid #d4af37;
+
+    margin: 10px;
+
+    border-radius: 18px;
 }
 
-th,
-td {
-    border: 1px solid lightpink;
-    padding: 12px;
+
+/* IMAGENES */
+
+.tarjeta img {
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    background-color: #ffffff;
+
+    padding: 5px;
+
+    border: 2px solid #c0c0c0;
+
+    margin: 0 auto 15px auto;
+
+    border-radius: 12px;
 }
 
-th {
-    background-color: #f8d5df;
-    color: #9e3f61;
+
+/* NOMBRE DEL PRODUCTO */
+
+.tarjeta h3 {
+    color: #c94f83;
+
+    font-size: 21px;
+
+    margin: 0 0 12px 0;
 }
+
+
+/* DESCRIPCION DEL PRODUCTO */
+
+.tarjeta p {
+    color: #6b4052;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin: 0 0 15px 0;
+}
+
+
+/* PRECIO */
+
+.precio {
+    display: block;
+
+    color: #a67c00;
+
+    background-color: #fff8df;
+
+    padding: 8px;
+
+    border: 1px solid #d4af37;
+
+    margin: 10px 0;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* DESCRIPCION DE GLOW STUDIO */
+
+.descripcion {
+    width: 70%;
+
+    background-color: #ffe1ed;
+
+    padding: 25px;
+
+    border: 3px solid #c0c0c0;
+
+    margin: 30px auto;
+
+    border-radius: 18px;
+}
+
+.descripcion h2 {
+    color: #c94f83;
+
+    margin: 0 0 15px 0;
+}
+
+.descripcion p {
+    color: #6b4052;
+
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* REGISTRO */
+
+.registro {
+    width: 80%;
+
+    margin: 35px auto;
+}
+
+
+/* FORMULARIO */
 
 form {
-    padding: 20px;
+    width: 80%;
+
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border: 3px solid #e8a8c2;
+
+    margin: 20px auto;
+
+    border-radius: 18px;
+}
+
+label {
+    color: #c94f83;
+
+    font-weight: bold;
 }
 
 input {
+    padding: 10px;
+
+    background-color: #fffafd;
+
+    border: 1px solid #c0c0c0;
+
     margin: 5px;
+
+    border-radius: 8px;
 }
+
+
+/* BOTON */
 
 button {
-    background-color: lightpink;
-    color: white;
-    border: none;
-    padding: 12px 20px;
+    background-color: #d96b91;
+
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border: 2px solid #d4af37;
+
+    margin: 15px;
+
+    border-radius: 10px;
+
     font-size: 16px;
+
+    cursor: pointer;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid lightpink;
-    margin: 20px 0;
+
+/* INFORMACION */
+
+.informacion {
+    width: 80%;
+
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border: 2px solid #d4af37;
+
+    margin: 35px auto;
+
+    border-radius: 18px;
 }
 
-.aviso {
-    color: red;
+.informacion p {
+    color: #6b4052;
+
+    line-height: 1.6;
 }
 
-#mensaje-especial {
-    color: green;
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #f8c8dc;
+
+    padding: 20px;
+
+    border-top: 3px solid #c0c0c0;
+
+    margin-top: 35px;
+}
+
+footer p {
+    color: #9e3f61;
+
+    margin: 0;
 }
