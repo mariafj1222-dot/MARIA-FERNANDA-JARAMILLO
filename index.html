@@ -1,139 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Studio - Maquillaje</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería La Espiga</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-
 <body>
 
-    <h1 id="logo">💄 Glow Beauty 💗</h1>
+  <header class="cabecera">
+    <div class="logo">La Espiga 🌾</div>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>
-        Maquillaje para resaltar tu belleza y tu estilo ✨
-    </p>
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Pan artesanal recién horneado, todos los días</h1>
+      <p>Panadería familiar en el barrio, con más de 20 años de tradición.</p>
+    </section>
 
-    <hr>
+    <section id="productos" class="productos">
+      <h2>Nuestros productos</h2>
+      <div class="lista-productos">
 
-    <h1 class="titulo">🌸 Nuestros productos</h1>
+        <article class="producto-card">
+          <img src="pan frances.jpg" alt="Pan francés">
+          <span class="etiqueta-oferta">Oferta</span>
+          <h3>Pan francés</h3>
+          <p>Crujiente por fuera, suave por dentro.</p>
+        </article>
 
-    <table>
-        <tr>
-            <th>Producto</th>
-            <th>Tipo</th>
-            <th>Precio</th>
-        </tr>
+        <article class="producto-card">
+          <img src="croasant.jpg" alt="Croissant">
+          <h3>Croissant</h3>
+          <p>Hojaldrado y con mantequilla real.</p>
+        </article>
 
-        <tr>
-            <td>Base Glow</td>
-            <td>Base</td>
-            <td>$65.000</td>
-        </tr>
+        <article class="producto-card">
+          <img src="torta de chocolate.jpg" alt="Torta de chocolate">
+          <h3>Torta de chocolate</h3>
+    <p>Ideal para cumpleaños y celebraciones.</p>
+        </article>
 
-        <tr>
-            <td>Pink Blush</td>
-            <td>Rubor</td>
-            <td>$35.000</td>
-        </tr>
+        <article class="producto-card">
+            <img src="galletas.jpg" alt="Galletas de chocolate">
+            <h3>Galletas de chocolate</h3>
+            <p>Ideal para cualquier ocasion</p>
+        </article>
 
-        <tr>
-            <td>Magic Eyes</td>
-            <td>Sombras</td>
-            <td>$80.000</td>
-        </tr>
+    </div>
+    </section>
 
-        <tr>
-            <td>Shine Gloss</td>
-            <td>Brillo labial</td>
-            <td>$28.000</td>
-        </tr>
-    </table>
+    <section id="nosotros" class="nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una panadería familiar que empezó en un pequeño local hace más de 20 años. Hoy seguimos horneando con las mismas recetas de siempre.</p>
+    </section>
+ </main>
 
-    <hr>
-
-    <h1 class="titulo">💗 Regístrate en Glow Beauty</h1>
-
-    <p>
-        Completa el formulario para conocer más sobre nuestros productos.
-    </p>
-
-    <form>
-
-        <label>Nombre:</label>
-        <br>
-        <input type="text" placeholder="Escribe tu nombre">
-
-        <br><br>
-
-        <label>Correo:</label>
-        <br>
-        <input type="text" placeholder="Escribe tu correo">
-
-        <br><br>
-
-        <label>Contraseña:</label>
-        <br>
-        <input type="password" placeholder="Escribe tu contraseña">
-
-        <br><br>
-
-        <label>¿Qué producto te gusta más?</label>
-
-        <br><br>
-
-        <input type="radio" name="producto">
-        Base 💄
-
-        <input type="radio" name="producto">
-        Labial 💋
-
-        <input type="radio" name="producto">
-        Sombras 👁️
-
-        <br><br>
-
-        <h1 class="titulo">
-            ¿Qué productos quieres conocer?
-        </h1>
-
-        <br><br>
-
-        <input type="checkbox">
-        Maquillaje 💄
-
-        <input type="checkbox">
-        Rubores 🌸
-
-        <input type="checkbox">
-        Labiales 💋
-
-        <br><br>
-
-        <a href="https://github.com/mariafj1222-dot/MARIA-FERNANDA-JARAMILLO.git">
-            <button type="button">
-                ✨ Iniciar sesión ✨
-            </button>
-        </a>
-
-    </form>
-
-    <hr>
-
-    <h1 class="titulo">✨ Sobre Glow Beauty</h1>
-
-    <p>
-        Glow Beauty es una página dedicada al maquillaje,
-        donde puedes conocer diferentes productos y encontrar
-        opciones para crear tus looks favoritos. 💕
-    </p>
-
-    <p>
-        💗 Gracias por visitar Glow Beauty ✨
-    </p>
+<footer class="pie">
+    <p>&copy; 2026 Panadería La Espiga. Todos los derechos reservados.</p>
+ </footer>
 
 </body>
-
 </html>
