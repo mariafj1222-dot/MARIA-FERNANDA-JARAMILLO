@@ -1,0 +1,117 @@
+:root {
+    --rosa: #f7e6ec;
+    --rosa-oscuro: #c47791;
+    --dorado: #b89455;
+    --blanco: #ffffff;
+    --texto: #493640;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf7;
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--blanco);
+}
+
+.navbar-brand {
+    color: var(--rosa-oscuro) !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-link:hover {
+    color: var(--rosa-oscuro);
+}
+
+.hero {
+    background-color: var(--rosa);
+    padding: 20px;
+}
+
+.hero h1 {
+    color: #8f536a;
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.subtitulo {
+    color: var(--dorado);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.descripcion {
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+.btn-luxury {
+    background-color: var(--rosa-oscuro);
+    color: var(--blanco);
+    border-radius: 25px;
+    padding: 10px 22px;
+    border: none;
+}
+
+.btn-luxury:hover {
+    background-color: #a85f79;
+    color: var(--blanco);
+}
+
+.section-title {
+    color: #8f536a;
+    font-weight: bold;
+}
+
+.service-card {
+    height: 100%;
+    background-color: var(--blanco);
+    border: 1px solid #ead7de;
+    border-radius: 12px;
+}
+
+.service-card .card-body {
+    padding: 25px 18px;
+}
+
+.service-icon {
+    color: var(--dorado);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: #8f536a;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-text {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #34262e;
+    color: var(--blanco);
+}
+
+.footer-brand {
+    color: #e5c58e;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        letter-spacing: 1px;
+    }
+}
